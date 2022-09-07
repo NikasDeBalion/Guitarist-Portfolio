@@ -6,9 +6,29 @@
 .main-section {
   height: 878px;
   background: #DFDFDF;
+  padding-top: 23px;
+}
+.main-section__nav-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 58px;
+  align-items: center;
 }
 
 .main-section__logo {
   width: 113px;
   height: 58px;
+}
+
+.nav-menu__list {
+  display: flex;
+  flex-direction: row;
+}
+.nav-menu__item {
+  margin-right: 64px;
+  font-size: 18px;
+}
+.nav-menu__item:last-child {
+  margin-right: 0px;
 }/*# sourceMappingURL=style.css.map */
