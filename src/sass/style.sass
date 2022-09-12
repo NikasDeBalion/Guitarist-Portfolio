@@ -9,20 +9,22 @@ $color-cyan: #00F0FF
 .container
     max-width: 1140px
     margin: 0 auto
-    margin-bottom: 78px
+    // margin-bottom: 125px
 
 .main-section
-    height: 878px
+    min-height: 810px
     background: #DFDFDF
     padding-top: 23px
     overflow: hidden
     position: relative
+    margin-bottom: 45px
     &__nav-container
         display: flex
         flex-direction: row
         justify-content: space-between
         height: 58px
         align-items: center
+        margin-bottom: 40px
     &__logo
         width: 113px
         height: 58px
@@ -30,11 +32,11 @@ $color-cyan: #00F0FF
         display: flex
         flex-direction: row
         position: relative
-    &__first-elipse
+    &__first-ellipse
         position: absolute
         top: 120px
-        right: 60px
-    &__second-elipse
+        right: 7px
+    &__second-ellipse
         position: absolute
         right: -120px
         top: 750px
@@ -128,12 +130,12 @@ $color-cyan: #00F0FF
     font-style: normal
     font-weight: 700
     &__hr
-        width: 89px
+        width: 80px
         position: absolute
         bottom: 0px
         margin: 0
         border: none
-        border-top: 1px solid black
+        border-top: 2px solid black
 
 .buttons
     display: inline-flex
@@ -148,13 +150,16 @@ $color-cyan: #00F0FF
         height: 65px
         color: white
         border: none
+        &:hover
+            // background: black
+
     &__icon-btn
         display: inline-flex
         align-items: center
         img
             margin-right: 15px
 
-.elipse
+.ellipse
     width: 230px
     height: 230px
     background: linear-gradient(135deg, rgba(255, 77, 27, 0.5) 0%, rgba(34, 117, 237, 0.5) 51.04%, rgba(0, 240, 255, 0.5) 100%)
@@ -173,3 +178,31 @@ $color-cyan: #00F0FF
         &_big
             width: 188px
             height: 188px
+
+.second-section
+    min-height: 645px
+    &__title
+        margin-bottom: 
+
+.cards-item
+    position: relative
+    width: 360px
+    height: 360px
+    background: $color-cyan
+    border-radius: 20px
+    display: flex
+    align-items: flex-end
+    img
+        width: 186px
+        height: 334px
+    &__text
+        width: 280px
+        font-family: 'Montserrat'
+        font-weight: 600
+        font-size: 36px
+        color: #000000
+        transform: rotate(90deg)
+        text-align: center
+        position: absolute
+        top: 145px
+        right: -70px
