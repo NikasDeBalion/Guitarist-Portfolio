@@ -138,6 +138,13 @@
   margin-right: 0px;
 }
 
+.button-text {
+  font-family: "Montserrat";
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 22px;
+}
+
 .title {
   font-size: 65px;
   position: relative;
@@ -204,6 +211,21 @@
 .second-section {
   min-height: 645px;
 }
+.second-section__title {
+  margin-bottom: 54px;
+}
+.second-section__card-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 54px;
+}
+.second-section__about-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 .cards-item {
   position: relative;
   width: 360px;
