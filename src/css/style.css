@@ -5,6 +5,7 @@
 .container {
   max-width: 1140px;
   margin: 0 auto;
+  position: relative;
 }
 
 .main-section {
@@ -214,6 +215,7 @@
 .second-section__container {
   padding-top: 32px;
   position: relative;
+  padding-bottom: 55px;
 }
 .second-section__title {
   margin-bottom: 54px;
@@ -241,11 +243,23 @@
   right: -60px;
   z-index: -1;
 }
+.second-section__ellipse__subtract {
+  width: 158px;
+  height: 158px;
+  background: #ffffff;
+  border-radius: 200px;
+}
 .second-section__second-ellipse {
   position: absolute;
   top: 364px;
   left: -60px;
   z-index: -1;
+}
+.second-section__ellips-subtract {
+  width: 158px;
+  height: 158px;
+  background: #ffffff;
+  border-radius: 200px;
 }
 
 .cards-item {
@@ -302,8 +316,11 @@
 }
 
 .third-section {
+  position: relative;
   min-height: 640px;
-  background: #f0f0f0;
+  background: #d9d9d9;
+  z-index: 0;
+  overflow: hidden;
 }
 .third-section__container {
   display: flex;
@@ -316,15 +333,33 @@
 .third-section__rigth-wrapper {
   max-width: 457px;
 }
-.third-section__title {
-  margin-bottom: 20px;
+.third-section__rigth-title {
+  margin-bottom: 33px;
 }
-.third-section__text {
+.third-section__rigth-text {
   font-family: "Verdana";
   font-weight: 400;
   font-size: 16px;
-  margin-bottom: 30px;
+  margin-bottom: 33px;
 }
+.third-section__first-ellipse {
+  position: absolute;
+  z-index: -1;
+  top: 168px;
+  left: 150px;
+}
+.third-section__figure {
+  position: absolute;
+  z-index: -1;
+  top: 283px;
+  left: 36px;
+}
+.third-section__second-ellipse {
+  position: absolute;
+  right: -120px;
+  top: -120px;
+}
+
 .title__hr_top {
   bottom: 65px;
 }/*# sourceMappingURL=style.css.map */

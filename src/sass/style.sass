@@ -9,7 +9,7 @@ $color-cyan: #00F0FF
 .container
     max-width: 1140px
     margin: 0 auto
-    // margin-bottom: 125px
+    position: relative
 
 .main-section
     min-height: 810px
@@ -191,6 +191,7 @@ $color-cyan: #00F0FF
     &__container
         padding-top: 32px
         position: relative
+        padding-bottom: 55px
     &__title
         margin-bottom: 54px
     &__card-box
@@ -211,11 +212,22 @@ $color-cyan: #00F0FF
         top: 80px
         right: -60px
         z-index: -1
+    &__ellipse__subtract
+        width: 158px
+        height: 158px
+        background: #ffffff
+        border-radius: 200px
     &__second-ellipse
         position: absolute
         top: 364px
         left: -60px
         z-index: -1
+    &__ellips-subtract
+        width: 158px
+        height: 158px
+        background: #ffffff
+        border-radius: 200px
+
 
 .cards-item
     position: relative
@@ -262,8 +274,11 @@ $color-cyan: #00F0FF
             font-size: 36px
 
 .third-section
+    position: relative
     min-height: 640px
-    background: #f0f0f0
+    background: #d9d9d9
+    z-index: 0
+    overflow: hidden
     &__container
         display: flex
         flex-direction: row
@@ -273,14 +288,27 @@ $color-cyan: #00F0FF
         padding-top: 54px
     &__rigth-wrapper
         max-width: 457px
-    &__title
-        margin-bottom: 20px
-    &__text
+    &__rigth-title
+        margin-bottom: 33px
+    &__rigth-text
         font-family: 'Verdana'
         font-weight: 400
         font-size: 16px
-        margin-bottom: 30px
-    &__left-wrapper
+        margin-bottom: 33px
+    &__first-ellipse
+        position: absolute
+        z-index: -1
+        top: 168px
+        left: 150px
+    &__figure
+        position: absolute
+        z-index: -1
+        top: 283px
+        left: 36px
+    &__second-ellipse
+        position: absolute
+        right: -120px
+        top: -120px
 
 .title__hr_top
     bottom: 65px
