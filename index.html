@@ -17,7 +17,7 @@
 
     <!-- First section -->
     <!-- ! MAIN-SECTION__LEFT-WRAPPER -->
-    <section class="main-section">
+    <section id="about-me" class="main-section">
         <div class="container main-section__nav-container">
 
             <!-- Навигационное меню -->
@@ -28,9 +28,9 @@
 
             <nav class="main-section__nav nav-menu">
                 <ul class="nav-menu__list">
-                    <li class="nav-menu__item">Обо мне</li>
-                    <li class="nav-menu__item">Занятия</li>
-                    <li class="nav-menu__item">Запись</li>
+                    <li class="nav-menu__item"><a href="#about-me">Обо мне</a></li>
+                    <li class="nav-menu__item"><a href="#lessons">Занятия</a></li>
+                    <li class="nav-menu__item"><a href="#subscribe">Запись</a></li>
                 </ul>
             </nav>
         </div>
@@ -47,16 +47,16 @@
                 <div class="right-wrapper__icons-box icons">
                     <!-- иконки -->
                     <div class="icons__item">
-                        <img src="/src/icons/skype.svg" alt="">
+                        <a href="#"><img src="/src/icons/skype.svg" alt=""></a>
                     </div>
                     <div class="icons__item">
-                        <img src="/src/icons/vk.svg" alt="">
+                        <a href=""><img src="/src/icons/vk.svg" alt=""></a>
                     </div>
                     <div class="icons__item">
-                        <img src="/src/icons/instagramm.svg" alt="">
+                        <a href=""><img src="/src/icons/instagramm.svg" alt=""></a>
                     </div>
                     <div class="icons__item">
-                        <img src="/src/icons/telegramm.svg" alt="">
+                        <a href=""><img src="/src/icons/telegramm.svg" alt=""></a>
                     </div>
                 </div>
                 <!-- заголовок -->
@@ -95,7 +95,7 @@
     </section>
 
     <!-- Second section -->
-    <section class="second-section">
+    <section id="lessons" class="second-section">
         <div class="container second-section__container">
             <!-- Заголовок -->
             <h2 class="second-section__title title">
@@ -170,9 +170,9 @@
     </section>
 
     <!-- Третья секция -->
-    <section class="third-section">
+    <section id="subscribe" class="third-section">
         <div class="container third-section__container">
-    
+
             <!-- Left section -->
             <div class="third-section__left-wrapper">
                 <h3 class="third-section__left-title title">
@@ -180,7 +180,7 @@
                     Обучаю
                 </h3>
             </div>
-    
+
             <!-- Right section -->
             <div class="third-section__rigth-wrapper">
                 <h4 class="third-section__rigth-title title">
@@ -195,22 +195,24 @@
                     <br>
                     <br>
                     Значимость этих проблем настолько очевидна, что дальнейшее развитие различных форм деятельности
-                    представляет собой интересный эксперимент проверки модели развития. Значимость этих проблем настолько
-                    очевидна, что новая модель организационной деятельности влечет за собой процесс внедрения и модернизации
+                    представляет собой интересный эксперимент проверки модели развития. Значимость этих проблем
+                    настолько
+                    очевидна, что новая модель организационной деятельности влечет за собой процесс внедрения и
+                    модернизации
                     существенных финансовых и административных условий.
                 </p>
-    
+
                 <button class="buttons__main-btn">
                     Забронировать<br>урок
                 </button>
-    
+
                 <div class="right-wrapper__icon-btn buttons__icon-btn">
                     <img src="/src/icons/chat_1.svg" alt="chat">
                     <p class="button-text">
                         Есть<br>вопросы?
                     </p>
                 </div>
-    
+
                 <div class="third-section__first-ellipse ellipse ellipse">
                     <div class="ellipse__subtract ellipse__subtract">
                     </div>
@@ -225,9 +227,33 @@
         </div>
     </section>
 
-    <!-- TODO Footer -->
-    <footer>
-        
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer__container">
+            <img src="/src/img/Гриф 1.png" alt="" class="footer__img">
+            <div class="footer__wrapper">
+                <h5 class="footer__title title">
+                    <hr class="title__hr title__hr_bottom">
+                    Запишись на <br>
+                    пробный урок
+                </h5>
+                <div class="footer__icons-box icons">
+                    <!-- иконки -->
+                    <div class="icons__item">
+                        <a href="#"><img src="/src/icons/skype.svg" alt=""></a>
+                    </div>
+                    <div class="icons__item">
+                        <a href=""><img src="/src/icons/vk.svg" alt=""></a>
+                    </div>
+                    <div class="icons__item">
+                        <a href=""><img src="/src/icons/instagramm.svg" alt=""></a>
+                    </div>
+                    <div class="icons__item">
+                        <a href=""><img src="/src/icons/telegramm.svg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </footer>
 
 </body>
