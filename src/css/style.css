@@ -2,6 +2,18 @@
   box-sizing: border-box;
 }
 
+body {
+  cursor: url("../cursor/normal-select-blue.cur"), default;
+}
+
+h1, h2, h3, h4, h5, h6, p, span {
+  cursor: url("../cursor/txt-selection-blue.cur"), text;
+}
+
+a, button {
+  cursor: url("../cursor/link-select.cur"), pointer;
+}
+
 @font-face {
   font-family: "Montserrat";
   src: url("../fonts/Montserrat-Regular.ttf");
@@ -126,6 +138,10 @@
   right: 0px;
   z-index: 5;
 }
+.right-wrapper__icon-btn {
+  display: inline-flex;
+  align-items: center;
+}
 .right-wrapper__icons-box {
   margin-bottom: 15px;
 }
@@ -162,6 +178,7 @@
 }
 
 .button-text {
+  cursor: url("../cursor/link-select.cur"), pointer;
   font-family: "Montserrat";
   font-weight: 300;
   font-size: 18px;
@@ -206,6 +223,12 @@ button:hover {
   height: 65px;
   color: white;
   border: none;
+}
+.buttons__text {
+  color: #fff;
+}
+.buttons__text:hover {
+  color: #fff;
 }
 .buttons__icon-btn {
   display: inline-flex;

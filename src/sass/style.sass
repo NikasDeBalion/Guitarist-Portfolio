@@ -1,10 +1,18 @@
-
 $color-blue: #2275ED
 $color-orange: #FF4D1B
 $color-cyan: #00F0FF
 
 *
     box-sizing: border-box
+
+body
+    cursor: url('../cursor/normal-select-blue.cur'), default
+
+h1,h2,h3,h4,h5,h6,p,span
+    cursor: url('../cursor/txt-selection-blue.cur'), text
+
+a,button
+    cursor: url('../cursor/link-select.cur'), pointer
 
 @font-face
     font-family: "Montserrat"
@@ -115,6 +123,9 @@ $color-cyan: #00F0FF
     top: 150px
     right: 0px
     z-index: 5
+    &__icon-btn
+        display: inline-flex
+        align-items: center
     &__icons-box
         margin-bottom: 15px
     &__title
@@ -144,6 +155,7 @@ $color-cyan: #00F0FF
             margin-right: 0px
 
 .button-text
+    cursor: url('../cursor/link-select.cur'), pointer
     font-family: 'Montserrat'
     font-weight: 300
     font-size: 18px
@@ -182,8 +194,12 @@ button
         height: 65px
         color: white
         border: none
-
+    &__text
+        color: #fff
+        &:hover
+            color: #fff
     &__icon-btn
+        
         display: inline-flex
         align-items: center
         img
@@ -334,7 +350,7 @@ button
         position: absolute
         right: -120px
         top: -120px
-    &__buttons 
+    &__buttons
         display: inline-flex
 
 .title__hr_top
