@@ -393,6 +393,9 @@ button:hover {
   right: -120px;
   top: -120px;
 }
+.third-section__buttons {
+  display: inline-flex;
+}
 
 .title__hr_top {
   bottom: 65px;
