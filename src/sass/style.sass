@@ -199,7 +199,7 @@ button
         &:hover
             color: #fff
     &__icon-btn
-        
+
         display: inline-flex
         align-items: center
         img
@@ -236,6 +236,8 @@ button
     &__card-box
         display: inline-flex
         margin-bottom: 47px
+        display: flex
+        justify-content: center
     &__card-item
         margin-right: 30px
         transition-duration: 0.4s
@@ -377,3 +379,65 @@ a
     color: #000
     &:hover
         color: $color-orange
+
+// *Media запросы
+
+// Маленький ПК или горизонтальный планшет
+@media (max-width:  1199px)
+    .container
+        width: 960px
+
+    .main-section
+        min-height: 690px
+
+    .img
+        width: 750px
+        &__rectangle-blue
+            width: 500px
+            height: 200px
+        &__rectangle-orange
+            width: 550px
+            height: 200px
+        &__rectangle-cyan
+            width: 500px
+            height: 200px
+
+    .right-wrapper
+        right: -10px
+
+    .second-section
+        min-height: 600px
+        &__card-box
+            display: flex
+            justify-content: center
+
+    .cards-item
+        width: 300px
+        height: 300px
+        &__img
+            height: 240px
+        &__text
+            top: 120px
+            font-size: 30px
+            right: -85px
+
+    .third-section
+        &__container
+            padding-left: 40px
+        &__right-wrapper
+            max-width: 450px
+
+// Вертикальный планшет
+@media (max-width:  991px)
+    .container
+        width: 720px
+
+// Горизонтальный телефон
+@media (max-width:  767px)
+    .container
+        width: 540px
+
+// Вертикальный телефон
+@media (max-width:  575px)
+    .container
+        width: 100%
