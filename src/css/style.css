@@ -211,19 +211,41 @@
 .second-section {
   min-height: 645px;
 }
+.second-section__container {
+  padding-top: 32px;
+  position: relative;
+}
 .second-section__title {
   margin-bottom: 54px;
 }
 .second-section__card-box {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin-bottom: 54px;
+  display: inline-flex;
+  margin-bottom: 47px;
 }
-.second-section__about-box {
+.second-section__card-item {
+  margin-right: 30px;
+}
+.second-section__card-item:last-child {
+  margin-right: 0;
+}
+.second-section__icons-box {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-evenly;
+}
+.second-section__icons-item:last-child {
+  margin-right: 0;
+}
+.second-section__first-ellipse {
+  position: absolute;
+  top: 80px;
+  right: -60px;
+  z-index: -1;
+}
+.second-section__second-ellipse {
+  position: absolute;
+  top: 364px;
+  left: -60px;
+  z-index: -1;
 }
 
 .cards-item {
@@ -235,7 +257,7 @@
   display: flex;
   align-items: flex-end;
 }
-.cards-item img {
+.cards-item__img {
   width: 186px;
   height: 334px;
 }
@@ -250,4 +272,59 @@
   position: absolute;
   top: 145px;
   right: -70px;
+}
+
+.cards-item_orange {
+  background: #FF4D1B;
+}
+
+.cards-item_blue {
+  background: #2275ED;
+}
+
+.icons-item {
+  display: inline-flex;
+  align-items: center;
+}
+.icons-item__img {
+  margin-right: 20px;
+  width: 80px;
+}
+.icons-item__text {
+  font-family: "Open Sans";
+  font-weight: 300;
+  font-size: 20px;
+}
+.icons-item__text span {
+  font-family: "Open Sans";
+  font-weight: 700;
+  font-size: 36px;
+}
+
+.third-section {
+  min-height: 640px;
+  background: #f0f0f0;
+}
+.third-section__container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 167px;
+  justify-content: space-between;
+  padding-top: 54px;
+}
+.third-section__rigth-wrapper {
+  max-width: 457px;
+}
+.third-section__title {
+  margin-bottom: 20px;
+}
+.third-section__text {
+  font-family: "Verdana";
+  font-weight: 400;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+.title__hr_top {
+  bottom: 65px;
 }/*# sourceMappingURL=style.css.map */

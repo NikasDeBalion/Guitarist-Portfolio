@@ -188,17 +188,34 @@ $color-cyan: #00F0FF
 
 .second-section
     min-height: 645px
+    &__container
+        padding-top: 32px
+        position: relative
     &__title
         margin-bottom: 54px
     &__card-box
+        display: inline-flex
+        margin-bottom: 47px
+    &__card-item
+        margin-right: 30px
+        &:last-child
+            margin-right: 0
+    &__icons-box
         display: flex
-        flex-direction: row
-        justify-content: space-between
-        margin-bottom: 54px
-    &__about-box
-        display: flex
-        flex-direction: row
-        justify-content: space-between
+        justify-content: space-evenly
+    &__icons-item
+        &:last-child
+            margin-right: 0
+    &__first-ellipse
+        position: absolute
+        top: 80px
+        right: -60px
+        z-index: -1
+    &__second-ellipse
+        position: absolute
+        top: 364px
+        left: -60px
+        z-index: -1
 
 .cards-item
     position: relative
@@ -208,7 +225,7 @@ $color-cyan: #00F0FF
     border-radius: 20px
     display: flex
     align-items: flex-end
-    img
+    &__img
         width: 186px
         height: 334px
     &__text
@@ -222,3 +239,48 @@ $color-cyan: #00F0FF
         position: absolute
         top: 145px
         right: -70px
+
+.cards-item_orange
+    background: $color-orange
+
+.cards-item_blue
+    background: $color-blue
+
+.icons-item
+    display: inline-flex
+    align-items: center
+    &__img
+        margin-right: 20px
+        width: 80px
+    &__text
+        font-family: 'Open Sans'
+        font-weight: 300
+        font-size: 20px
+        span
+            font-family: 'Open Sans'
+            font-weight: 700
+            font-size: 36px
+
+.third-section
+    min-height: 640px
+    background: #f0f0f0
+    &__container
+        display: flex
+        flex-direction: row
+        align-items: center
+        padding-left: 167px
+        justify-content: space-between
+        padding-top: 54px
+    &__rigth-wrapper
+        max-width: 457px
+    &__title
+        margin-bottom: 20px
+    &__text
+        font-family: 'Verdana'
+        font-weight: 400
+        font-size: 16px
+        margin-bottom: 30px
+    &__left-wrapper
+
+.title__hr_top
+    bottom: 65px
