@@ -17,18 +17,22 @@ a, button {
 @font-face {
   font-family: "Montserrat";
   src: url("../fonts/Montserrat-Regular.ttf");
+  font-display: swap;
 }
 @font-face {
   font-family: "Verdana Bold";
   src: url("../fonts/verdana-bold.ttf");
+  font-display: swap;
 }
 @font-face {
   font-family: "Verdana";
   src: url("../fonts/verdana.ttf");
+  font-display: swap;
 }
 @font-face {
   font-family: "Open Sans";
   src: url("../fonts/OpenSans-Bold.ttf");
+  font-display: swap;
 }
 .container {
   max-width: 1140px;
